@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scopero generale degli studenti</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CONFIGURAZIONE DATA SCIOPERO -->
+    <script>
+      // MODIFICA LA DATA DELLO SCIOPERO QUI SOTTO
+      const DATA_SCIOPERO = "Venerdì 30 Gennaio";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".data-sciopero-dinamica").forEach((el) => {
+          el.textContent = DATA_SCIOPERO;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <div class="logo-container">
+          <img
+            src="assets/images/logo-comitato.svg"
+            alt="Logo Comitato Studentesco"
+            class="main-logo"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#diritti">Diritti Violati</a></li>
+            <li><a href="#comitato">Il Comitato</a></li>
+            <li><a href="#azione">Agisci</a></li>
+          </ul>
+        </nav>
+        <div class="party-logos">
+          <img
+            src="assets/images/logo-voce.jpg"
+            alt="Voce degli Studenti"
+            class="party-logo"
+          />
+          <img
+            src="assets/images/logo-riseup.jpg"
+            alt="Rise Up"
+            class="party-logo"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="strike-banner">
+          <h2>
+            📢 SCIOPERO GENERALE:
+            <span class="data-sciopero-dinamica">Venerdì 30 Gennaio</span>
+          </h2>
+        </div>
+        <h1>Non entrare a scuola</h1>
+        <p class="subtitle">
+          Il Comitato Studentesco indice sciopero generale. È fondamentale che
+          nessun studente entri a scuola per dare un segnale forte e
+          inequivocabile. Uniti possiamo cambiare le cose.
+        </p>
+        <a href="#diritti" class="btn primary-btn">Perché scioperiamo?</a>
+      </div>
+    </section>
+
+    <section id="diritti" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Diritti Calpestati & Problemi Irrisolti</h2>
+        <p class="section-desc">
+          Da anni assistiamo a irregolarità che minano la democraticità della
+          nostra scuola. Ecco i fatti.
+        </p>
+
+        <div class="grid-cards">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-icon">⚖️</div>
+            <h3>Regolamento del Comitato</h3>
+            <p>
+              Il comma 5 dell'art. 4 del DPR 567/1996 prevede che il comitato
+              adotti un proprio regolamento interno. Questo non solo non è mai
+              stato applicato, ma il nostro regolamento non è stato nemmeno
+              votato dal Consiglio di Istituto, generando confusione su ruoli e
+              compiti.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-icon">💸</div>
+            <h3>Gestione Economica</h3>
+            <p>
+              Il comitato ha subito pressioni per non esercitare i propri
+              diritti economici. I commi 7 e 8 del DPR 567/1996 stabiliscono che
+              il comitato elabora un piano di spesa e può realizzare attività di
+              autofinanziamento. Questi regolamenti vengono spesso ignorati o
+              bloccati.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-icon">📢</div>
+            <h3>Regolamento dell'Assemblea</h3>
+            <p>
+              L'art. 14 del D.Lgs 297/1994 stabilisce che l'assemblea
+              <strong>DEVE</strong> darsi un regolamento inviato in visione al
+              Consiglio di Istituto. Le nostre bozze sono state rifiutate
+              pretestuosamente e il Consiglio ha preteso di votarle, violando la
+              legge che garantisce l'autonomia studentesca.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Associazioni Studentesche</h3>
+            <p>
+              Le associazioni (DPR 567/1996 art. 5) sono fondamentali per la
+              vita scolastica. La possibilità di costituirle non viene
+              pubblicizzata, lasciando gli studenti ignari dei propri diritti e
+              delle opportunità di aggregazione e rappresentanza.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <div class="card-icon">❄️</div>
+            <h3>Riscaldamenti Mal Funzionanti</h3>
+            <p>
+              Spesso le aule sono gelide, violando le normative minime sulle
+              temperature negli edifici scolastici. Studiare al freddo
+              compromette la concentrazione e la salute di noi studenti.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <div class="card-icon">🏚️</div>
+            <h3>Laboratori Inadeguati</h3>
+            <p>
+              Strumentazioni obsolete, computer lenti e spazi non curati rendono
+              difficile un'istruzione pratica di qualità, che dovrebbe essere il
+              cuore pulsante di un istituto tecnico.
+            </p>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="card">
+            <div class="card-icon">🚫</div>
+            <h3>Amministrazione Ostile</h3>
+            <p>
+              L'amministrazione scolastica spesso sembra operare contro gli
+              studenti invece che per loro, creando burocrazia inutile, ritardi
+              e muri di gomma di fronte alle nostre legittime richieste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comitato" class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title">Cosa sta facendo il Comitato?</h2>
+        <div class="content-block">
+          <p>
+            Il Comitato Studentesco, che quest'anno è composto dalle liste
+            <strong>Voce degli Studenti</strong> e <strong>Rise Up</strong>, sta
+            lavorando instancabilmente per ripristinare la legalità:
+          </p>
+          <ul class="action-list">
+            <li>
+              <strong>Redazione dei Regolamenti:</strong> Stiamo riscrivendo e
+              depositando nuovamente i regolamenti per assemblee e comitato,
+              citando puntualmente le normative violate.
+            </li>
+            <li>
+              <strong>Dialogo Istituzionale:</strong> Abbiamo aperto un tavolo
+              di confronto con la Presidenza e il Consiglio di Istituto per
+              esigere il rispetto dei DPR 567/1996 e D.Lgs 297/1994. se il
+              dialogo non dovesse funzionare siamo pronti a intraprendere tutte
+              le vie, anche legali, per esigere il rispetto dei nostri diritti
+            </li>
+            <li>
+              <strong>Trasparenza:</strong> Stiamo rendendo pubblici tutti gli
+              atti e le mancate risposte per informare la componente
+              studentesca.
+            </li>
+            <li>
+              <strong>Sviluppo:</strong> Stiamo sviluppando molti progetti utili
+              a tutti gli studenti: resta sintonizzato!
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="azione" class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Cosa puoi fare tu?</h2>
+        <div class="action-cards">
+          <!-- Strike Card (Highlighted) -->
+          <div class="action-card strike-card">
+            <h3>SCIOPERA</h3>
+            <p>
+              <strong
+                ><span class="data-sciopero-dinamica"
+                  >Venerdì 30 Gennaio</span
+                ></strong
+              >
+              NON entrare a scuola. La partecipazione di massa è l'unico
+              linguaggio che le istituzioni capiscono. Se entri, legittimi chi
+              calpesta i tuoi diritti.
+            </p>
+          </div>
+          <div class="action-card">
+            <h3>Informati</h3>
+            <p>
+              Leggi i regolamenti e conosci i tuoi diritti. Un corpo studentesco
+              informato è più difficile da ignorare.
+            </p>
+          </div>
+          <div class="action-card">
+            <h3>Partecipa</h3>
+            <p>
+              Vieni alle assemblee, intervieni, e non lasciare che le decisioni
+              vengano prese sopra la tua testa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-logos">
+          <img
+            src="assets/images/logo-comitato.svg"
+            alt="CS"
+            class="footer-logo"
+          />
+        </div>
+        <p>
+          &copy; 2026 Comitato Studentesco - ITIS Enrico Fermi. Tutti i diritti
+          riservati.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
